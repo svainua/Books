@@ -20,13 +20,33 @@ class FrenchDeck:
         return self._cards[position]
 
 
-beer_card = Card("7", "diamonds")
-# print(beer_card)
-
 deck = FrenchDeck()
-print(len(deck))
+
+# print(len(deck))
 
 random_card = random.choice(deck)
-print(random_card)
+# print(random_card)
 
-print("hello world")
+# print(deck[12::13])
+
+# for card in deck:
+#     print(card)
+
+# for card in reversed(deck):
+#     print(card)
+
+# Cортировка списка словарей!
+
+suit_values = dict(spades=3, hearts=2, diamonds=1, clubs=0)
+
+
+def spades_high(card):
+    rank_value = FrenchDeck.ranks.index(card.rank)
+    return rank_value * len(suit_values) + suit_values[card.suit]
+
+
+for card in sorted(deck, key=spades_high):
+    print(card)
+
+# new_list = sorted(deck, key=spades_high)
+# print(new_list)
