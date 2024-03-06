@@ -29,8 +29,3 @@ print(to_normal_number("10011101"))
 print(to_binar_number(157))
 
 
-"""Разделить число на 2.
-Записать остаток от деления.
-Повторить шаги 1 и 2 со следующим частным, пока оно не станет равным 0.
-Записать все остатки от деления в обратном порядке.
-Источник: https://uchet-jkh.ru/i/perevod-iz-desyaticnoi-v-dvoicnuyu-sistemu-scisleniya"""
