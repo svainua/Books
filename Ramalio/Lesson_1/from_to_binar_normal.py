@@ -27,5 +27,3 @@ def to_binar_number(normal_number: int) -> str:
 
 print(to_normal_number("10011101"))
 print(to_binar_number(157))
-
-
